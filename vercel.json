@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "github": {
+    "silent": true
+  },
+  "outputDirectory": ".",
+  "installCommand": "echo Skipping install",
+  "buildCommand": "echo Skipping build",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-Requested-With, Content-Type, Accept"
+        }
+      ]
+    }
+  ]
+}
